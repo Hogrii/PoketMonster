@@ -4,7 +4,7 @@ public class ToolBox {
 	private int monsterBall;
 	
 	public ToolBox() {
-		this.monsterBall = 5;
+		this.monsterBall = 15;
 	}
 	
 	// 몬스터볼 개수 확인

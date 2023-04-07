@@ -44,7 +44,6 @@ public class Poketmon {
 		String catchMenu = display.catchMenu();
 		if(catchMenu.equals("1")) {
 			user.throwBall(poketmon);			
-			display.catchPoketmon(poketmon);
 		}else if(catchMenu.equals("2")) {
 			display.run();
 		}else {

@@ -70,6 +70,11 @@ public class Display {
 		System.out.println("야호! " + poketmon + " 을(를) 잡았다!");
 	}
 	
+	// 포켓몬 박스로 전송
+	public void moveFromBox(String poketmon) {
+		System.out.println(poketmon + " 은(는) 박스로 보내졌다!");
+	}
+	
 	// 몬스터볼이 부족할 때
 	public void notEnoughBall() {
 		System.out.println("몬스터볼이 부족합니다");
