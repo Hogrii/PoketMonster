@@ -16,7 +16,9 @@ public class Poketmon {
 		while(true) {
 			String menu = display.menu();
 			if(menu.equals("1")) {
-				wildPoketmon.appearPoketmon();
+				int randomPoketmon = wildPoketmon.appearPoketmon();
+				String poketmon = display.appearPoketmon(wildPoketmon, randomPoketmon);
+				catchPoketmon(poketmon);
 			}else if(menu.equals("2")) {
 				System.out.println("미구현");
 			}else if(menu.equals("3")) {

@@ -1,7 +1,9 @@
 package Display;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
+import PoketMon.WildPoketmon;
 import User.User;
 
 public class Display {
@@ -42,5 +44,12 @@ public class Display {
 		System.out.print("내가 할 일은? -> ");
 		String menu = sc.nextLine();
 		return menu;
+	}
+	
+	// 야생포켓몬 출현
+	public String appearPoketmon(WildPoketmon wildPoketmon, int randomPoketmon) {
+		HashMap<Integer, String> wildPoketmonList = wildPoketmon.getWildPoketmon();
+		System.out.println("야생의 \"" + wildPoketmonList.get(randomPoketmon) + "\" 이(가) 나타났다!");
+		return wildPoketmonList.get(randomPoketmon);
 	}
 }
