@@ -28,5 +28,6 @@ public class User {
 	// 야생포켓몬 포획
 	public void catchPoketmon(String catchPoketmon) {
 		this.catchPoketmon.add(catchPoketmon);
+		this.money += 200;
 	}
 }
