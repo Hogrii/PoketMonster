@@ -16,9 +16,7 @@ public class Poketmon {
 		while(true) {
 			String menu = display.menu();
 			if(menu.equals("1")) {
-				int randomPoketmon = wildPoketmon.appearPoketmon();
-				String poketmon = display.appearPoketmon(wildPoketmon, randomPoketmon);
-				catchPoketmon(poketmon);
+				wildPoketmon();				
 			}else if(menu.equals("2")) {
 				System.out.println("미구현");
 			}else if(menu.equals("3")) {
@@ -31,6 +29,13 @@ public class Poketmon {
 				
 			}
 		}
+	}
+	
+	// 야생포켓몬 메뉴
+	public void wildPoketmon() {
+		int randomPoketmon = wildPoketmon.appearPoketmon();
+		String poketmon = display.appearPoketmon(wildPoketmon, randomPoketmon);
+		catchPoketmon(poketmon);
 	}
 	
 	// 야생포켓몬 잡기
