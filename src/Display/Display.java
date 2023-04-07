@@ -28,4 +28,10 @@ public class Display {
 			inputUserName(user);
 		}
 	}
+	
+	// 환영 인사
+	public void welcome(User user) {
+		System.out.println("반갑다! " + user.getUserName() + "!");
+		System.out.println("포켓몬 세계로 출발!");
+	}
 }

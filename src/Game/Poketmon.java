@@ -12,5 +12,6 @@ public class Poketmon {
 	public void gameRun() {
 		display.init();
 		display.inputUserName(user);
+		display.welcome(user);
 	}
 }
