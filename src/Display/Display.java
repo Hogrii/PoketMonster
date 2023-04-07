@@ -52,4 +52,10 @@ public class Display {
 		System.out.println("야생의 \"" + wildPoketmonList.get(randomPoketmon) + "\" 이(가) 나타났다!");
 		return wildPoketmonList.get(randomPoketmon);
 	}
+	
+	public String catchMenu() {
+		System.out.println("1. 잡는다.\t2. 도망간다");
+		String catchMenu = sc.nextLine();
+		return catchMenu;
+	}
 }

@@ -32,4 +32,15 @@ public class Poketmon {
 			}
 		}
 	}
+	
+	public void catchPoketmon(String poketmon) {
+		String catchMenu = display.catchMenu();
+		if(catchMenu.equals("1")) {
+			
+		}else if(catchMenu.equals("2")) {
+			
+		}else {
+			
+		}
+	}
 }
