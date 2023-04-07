@@ -9,6 +9,18 @@ public class WildPoketmon {
 		init();
 	}
 	
+	// 야생 포켓몬 출력
+	public String appearPoketmon() {
+		int randomPoketmon = randomDex();
+		System.out.println("야생의 \"" + wildPoketmon.get(randomPoketmon) + "\" 이(가) 나타났다!");
+		return null;
+	}
+	
+	public int randomDex() {
+		return (int)(Math.random()*151 + 1);
+	}
+	
+	// 초기화
 	private void init() {
 		wildPoketmon.put(1, "이상해씨");
 		wildPoketmon.put(2, "이상해풀");
@@ -161,9 +173,5 @@ public class WildPoketmon {
 		wildPoketmon.put(149, "망나뇽");
 		wildPoketmon.put(150, "뮤츠");
 		wildPoketmon.put(151, "뮤");
-	}
-	
-	public HashMap<Integer, String> getWildPoketmon() {
-		return wildPoketmon;
 	}
 }
