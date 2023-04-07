@@ -34,4 +34,13 @@ public class Display {
 		System.out.println("반갑다! " + user.getUserName() + "!");
 		System.out.println("포켓몬 세계로 출발!");
 	}
+	
+	// 메뉴 화면
+	public String menu() {
+		System.out.println("1. 야생 포켓몬\t2. 포켓몬");
+		System.out.println("3. 가방\t\t4. 상점\t\t0. 종료");
+		System.out.print("내가 할 일은? -> ");
+		String menu = sc.nextLine();
+		return menu;
+	}
 }
