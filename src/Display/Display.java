@@ -65,6 +65,12 @@ public class Display {
 		System.out.println("야호! " + poketmon + " 을(를) 잡았다!");
 	}
 	
+	// 몬스터볼이 부족할 때
+	public void notEnoughBall() {
+		System.out.println("몬스터볼이 부족합니다");
+		System.out.println("상점에서 구매해주세요");
+	}
+	
 	// 도망치기
 	public void run() {
 		System.out.println("성공적으로 도망쳤다!");

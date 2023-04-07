@@ -2,16 +2,20 @@ package User;
 
 import java.util.ArrayList;
 
+import Display.Display;
+import Tool.ToolBox;
+
 public class User {
 	private String userName;
-	private int monsterBall;
 	private ArrayList<String> catchPoketmon = new ArrayList<>();
 	private int money;
+	
+	Display display = new Display();
+	ToolBox tool = new ToolBox();
 	
 	// 유저 이름 저장
 	public void inputUserName(String userName) {
 		this.userName = userName;
-		this.monsterBall = 5;
 		this.money = 0;
 	}
 	
@@ -21,8 +25,13 @@ public class User {
 	}
 	
 	// 야생포켓몬 포획 시도
-	public void throwBall() {
-		this.monsterBall--;
+	public void throwBall(String poketmon) {
+		if(tool.getMonsterBall() <=0) {
+			display.notEnoughBall();			
+		}else {
+			tool.throwMonsterBall();
+			catchPoketmon(poketmon);
+		}		
 	}
 	
 	// 야생포켓몬 포획
