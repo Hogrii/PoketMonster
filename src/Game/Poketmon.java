@@ -35,6 +35,7 @@ public class Poketmon {
 	public void wildPoketmon() {
 		int randomPoketmon = wildPoketmon.appearPoketmon();
 		String poketmon = display.appearPoketmon(wildPoketmon, randomPoketmon);
+		display.currentBallCnt(user);
 		catchPoketmon(poketmon);
 	}
 	

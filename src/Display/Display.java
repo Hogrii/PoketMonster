@@ -53,6 +53,11 @@ public class Display {
 		return wildPoketmonList.get(randomPoketmon);
 	}
 	
+	// 현재 소유 몬스터볼
+	public void currentBallCnt(User user) {
+		System.out.println("현재 몬스터볼 수 : " + user.getTool().getMonsterBall());
+	}
+	
 	// 야생포켓몬 메뉴
 	public String catchMenu() {
 		System.out.println("1. 잡는다.\t2. 도망간다");

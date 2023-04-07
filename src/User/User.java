@@ -9,19 +9,24 @@ public class User {
 	private String userName;
 	private ArrayList<String> catchPoketmon = new ArrayList<>();
 	private int money;
+	private ToolBox tool;
 	
 	Display display = new Display();
-	ToolBox tool = new ToolBox();
 	
 	// 유저 이름 저장
 	public void inputUserName(String userName) {
 		this.userName = userName;
 		this.money = 0;
+		this.tool = new ToolBox();
 	}
 	
 	// 유저 이름 반환
 	public String getUserName() {
 		return this.userName;
+	}
+	
+	public ToolBox getTool() {
+		return this.tool;
 	}
 	
 	// 야생포켓몬 포획 시도
