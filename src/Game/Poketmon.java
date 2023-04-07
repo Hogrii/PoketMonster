@@ -33,10 +33,13 @@ public class Poketmon {
 		}
 	}
 	
+	// 야생포켓몬 잡기
 	public void catchPoketmon(String poketmon) {
 		String catchMenu = display.catchMenu();
 		if(catchMenu.equals("1")) {
-			
+			user.throwBall();
+			user.catchPoketmon(poketmon);
+			display.catchPoketmon(poketmon);
 		}else if(catchMenu.equals("2")) {
 			
 		}else {

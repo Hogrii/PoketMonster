@@ -53,9 +53,15 @@ public class Display {
 		return wildPoketmonList.get(randomPoketmon);
 	}
 	
+	// 야생포켓몬 메뉴
 	public String catchMenu() {
 		System.out.println("1. 잡는다.\t2. 도망간다");
 		String catchMenu = sc.nextLine();
 		return catchMenu;
+	}
+	
+	// 포켓몬 잡았을 때
+	public void catchPoketmon(String poketmon) {
+		System.out.println("야호! " + poketmon + " 을(를) 잡았다!");
 	}
 }
