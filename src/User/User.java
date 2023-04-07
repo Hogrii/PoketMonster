@@ -3,6 +3,7 @@ package User;
 import java.util.ArrayList;
 
 import Display.Display;
+import PoketMon.PoketmonBox;
 import Tool.ToolBox;
 
 public class User {
@@ -10,6 +11,7 @@ public class User {
 	private ArrayList<String> catchPoketmon = new ArrayList<>();
 	private int money;
 	private ToolBox tool;
+	private PoketmonBox poketmonBox;
 	
 	Display display = new Display();
 	
@@ -18,6 +20,7 @@ public class User {
 		this.userName = userName;
 		this.money = 0;
 		this.tool = new ToolBox();
+		this.poketmonBox = new PoketmonBox();
 	}
 	
 	// 유저 이름 반환
@@ -40,8 +43,12 @@ public class User {
 	}
 	
 	// 야생포켓몬 포획
-	public void catchPoketmon(String catchPoketmon) {
-		this.catchPoketmon.add(catchPoketmon);
+	public void catchPoketmon(String poketmon) {
+		if(this.catchPoketmon.size()>6) {
+			poketmonBox.setPoketmonBox(poketmon);
+		}else {
+			this.catchPoketmon.add(poketmon);			
+		}
 		this.money += 200;
 	}
 }
