@@ -40,7 +40,8 @@ public class User {
 		}else {
 			tool.throwMonsterBall();
 			catchPoketmon(poketmon);
-		}		
+		}
+		System.out.println();
 	}
 	
 	// 야생포켓몬 포획

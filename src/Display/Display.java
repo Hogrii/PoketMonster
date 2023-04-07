@@ -19,6 +19,7 @@ public class Display {
 		System.out.println("당신의 이름이 " + user.getUserName() + "(이)가 맞습니까?");
 		System.out.print("네(1) 아니오(2) : ");
 		confirmUserName(user);
+		System.out.println();
 	}
 	
 	// 유저 이름 확인
@@ -35,6 +36,7 @@ public class Display {
 	public void welcome(User user) {
 		System.out.println("반갑다! " + user.getUserName() + "!");
 		System.out.println("포켓몬 세계로 출발!");
+		System.out.println();
 	}
 	
 	// 메뉴 화면
@@ -48,8 +50,10 @@ public class Display {
 	
 	// 야생포켓몬 출현
 	public String appearPoketmon(WildPoketmon wildPoketmon, int randomPoketmon) {
+		System.out.println();
 		HashMap<Integer, String> wildPoketmonList = wildPoketmon.getWildPoketmon();
 		System.out.println("야생의 \"" + wildPoketmonList.get(randomPoketmon) + "\" 이(가) 나타났다!");
+		System.out.println();
 		return wildPoketmonList.get(randomPoketmon);
 	}
 	
