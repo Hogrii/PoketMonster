@@ -64,4 +64,10 @@ public class Display {
 	public void catchPoketmon(String poketmon) {
 		System.out.println("야호! " + poketmon + " 을(를) 잡았다!");
 	}
+	
+	// 도망치기
+	public void run() {
+		System.out.println("성공적으로 도망쳤다!");
+		System.out.println();
+	}
 }

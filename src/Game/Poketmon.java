@@ -41,7 +41,7 @@ public class Poketmon {
 			user.catchPoketmon(poketmon);
 			display.catchPoketmon(poketmon);
 		}else if(catchMenu.equals("2")) {
-			
+			display.run();
 		}else {
 			
 		}
